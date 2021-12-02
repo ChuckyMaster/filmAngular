@@ -1,0 +1,25 @@
+button {
+  margin: 1rem;
+  padding: 10px 15px;
+  background-color: rgb(44, 21, 82);
+  border: 0;
+  border-radius: 3px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 1.25s ease;
+
+  &:hover {
+    color: rgb(44, 21, 82);
+    background-color: white;
+  }
+}
+
+form {
+  padding: 1rem;
+
+  input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}

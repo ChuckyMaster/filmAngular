@@ -1,0 +1,19 @@
+nav {
+  background: gray;
+  color: white;
+  .logo {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+ul {
+  li {
+    display: inline-block;
+    &:hover {
+      background: var(--secondary);
+    }
+    transition: background-color 0.4s;
+    padding: 10px 20px;
+  }
+}
