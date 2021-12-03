@@ -1,8 +1,10 @@
-<p>liste-film works!</p>
-
 <div class="container">
   <h1>Liste de Film</h1>
 
-  <app-miniature-film [film]="f" *ngFor="let f of listFilm ">
+  <app-miniature-film
+    (delete)="deleteFilm(f)"
+    [film]="f"
+    *ngFor="let f of listFilm"
+  >
   </app-miniature-film>
 </div>

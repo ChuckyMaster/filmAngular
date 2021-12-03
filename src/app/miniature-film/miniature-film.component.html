@@ -1,4 +1,4 @@
-<div class="container d-flex flex-align-items-center m-10">
+<div class="mini d-flex flex-align-items-center">
   <div class="d-flex flex-column m-10">
     <h2>{{ film.nom }}</h2>
     <img [src]="film.img" class="mb-20" alt="" />
@@ -10,7 +10,5 @@
     <li>{{ film.duree }}</li>
   </ul>
 
-  <button class="btn" (delete)="deleteFilm($event)" (click)="deleteFilm()">
-    Supprimer
-  </button>
+  <button class="btn btn-primary" (click)="deleteFilm()">Supprimer</button>
 </div>

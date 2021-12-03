@@ -7,6 +7,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ListeFilmComponent } from './liste-film/liste-film.component';
 import { CreateFilmComponent } from './create-film/create-film.component';
 import { MiniatureFilmComponent } from './miniature-film/miniature-film.component';
+import { FilmService } from './film.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,8 +18,8 @@ import { MiniatureFilmComponent } from './miniature-film/miniature-film.componen
     CreateFilmComponent,
     MiniatureFilmComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  providers: [FilmService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

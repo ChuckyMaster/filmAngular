@@ -1,22 +1,31 @@
 <div class="container">
   <h2>Ajouter un film</h2>
-  <form>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-group d-flex flex-column">
-      <label> Nom</label> <input type="text" />
+      <label> Nom</label> <input formControlName="nom" type="text" />
     </div>
     <div class="form-group d-flex flex-column">
-      <label> Annee de Sortie</label> <input type="number" />
+      <label> Annee de Sortie</label>
+      <input formControlName="annee" type="number" />
     </div>
 
     <div class="form-group d-flex flex-column">
-      <label> Realisateur</label> <input type="text" />
+      <label> Realisateur</label>
+      <input formControlName="realisateur" type="text" />
     </div>
     <div class="form-group d-flex flex-column">
-      <label> Duree</label> <input type="number" />
+      <label> Duree</label>
+      <input formControlName="duree" type="number" />
     </div>
+    <div>
+      <label> Genre</label>
+      <input formControlName="genre" type="text" />
+    </div>
+
     <div class="form-group d-flex flex-column">
-      <label> image</label> <input type="url" />
+      <label> image</label>
+      <input formControlName="image" type="url" />
     </div>
-    <button class="btn">Valider</button>
+    <button type="submit" class="btn btn-primary">Valider</button>
   </form>
 </div>

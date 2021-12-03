@@ -21,11 +21,11 @@ a {
 
 :root {
   font-family: "Lato", sans-serif;
-  $primary: #0e352b;
-  $secondary: #ebb577;
-  $accent: #807832;
-  $lightgray: #ddd;
-  $text-regular: #444;
+  --primary: #303332;
+  --secondary: #9a4f9c;
+  --accent: #a6b0da;
+  --lightgray: #ddd;
+  --text-regular: #444;
 }
 
 body {
@@ -38,7 +38,7 @@ body {
 .container {
   max-width: 1200px;
   display: block;
-  margin: auto;
+  margin: 0 auto;
   padding: 20px;
 }
 
