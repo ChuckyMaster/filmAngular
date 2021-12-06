@@ -9,6 +9,7 @@ export class FilmService {
 
   constructor() {
     let shang = new Film(
+      514365,
       'Shang-chi',
       2021,
       'fantasy',
@@ -17,6 +18,7 @@ export class FilmService {
       'https://d1fmx1rbmqrxrr.cloudfront.net/cnet/i/edit/2021/09/Shang%20Chi%203.jpeg'
     );
     let kenshin = new Film(
+      46464,
       'Kenshin le vagabond',
       2020,
       'fantasy',

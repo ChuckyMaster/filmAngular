@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { Film } from '../film.classe';
 
 @Component({
@@ -10,11 +11,15 @@ export class MiniatureFilmComponent implements OnInit {
   @Input() film!: Film;
   @Output() delete: EventEmitter<string> = new EventEmitter();
 
-  constructor() {}
+  constructor(private routeur: Router) {}
 
   ngOnInit(): void {}
 
   deleteFilm() {
     this.delete.emit();
+  }
+
+  modifFilm() {
+    this.routeur.navigate(['create', this.film.id]);
   }
 }

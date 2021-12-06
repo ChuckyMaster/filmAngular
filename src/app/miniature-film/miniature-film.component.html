@@ -4,6 +4,7 @@
     <img [src]="film.img" class="mb-20" alt="" />
   </div>
   <ul class="p-10">
+    <li>{{ film.id }}</li>
     <li>{{ film.AnneeSortie }}</li>
     <li>{{ film.genres }}</li>
     <li>{{ film.realisateur }}</li>
@@ -11,4 +12,5 @@
   </ul>
 
   <button class="btn btn-primary" (click)="deleteFilm()">Supprimer</button>
+  <button class="btn btn-primary" (click)="modifFilm()">Editer</button>
 </div>

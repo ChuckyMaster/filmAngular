@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'homepage', component: HomepageComponent },
   { path: 'list', component: ListeFilmComponent },
   { path: 'create', component: CreateFilmComponent },
+  { path: 'create/:id', component: CreateFilmComponent },
   { path: '**', redirectTo: 'homepage' },
 ];
 

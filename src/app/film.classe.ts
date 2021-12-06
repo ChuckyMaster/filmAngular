@@ -1,4 +1,5 @@
 export class Film {
+  id: number;
   nom: string;
   AnneeSortie: number;
   genres: string;
@@ -7,6 +8,7 @@ export class Film {
   img: string;
 
   constructor(
+    id: number,
     nom: string,
     AnneeSortie: number,
     genres: string,
@@ -14,6 +16,7 @@ export class Film {
     duree: number,
     img: string
   ) {
+    this.id = id;
     this.nom = nom;
     this.AnneeSortie = AnneeSortie;
     this.genres = genres;
